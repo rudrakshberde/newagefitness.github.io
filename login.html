@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<title>
+Login
+</title>
+<head>
+<link rel="icon" href="logo.jpeg" type="image/icon type">
+
+
+<script type="text/javascript">
+function validation()  
+{  
+var x=document.frm1.email.value;  
+var atposi=x.indexOf("@");  
+var dotposi=x.lastIndexOf("."); 
+var pass=document.frm1.password.value;
+var name=document.frm1.name.value;
+if (name==null || name==""){  
+  alert("username can't be blank");  
+}
+ 
+else if (atposi<1 || dotposi<atposi+2 || dotposi+2>=x.length){  
+  alert("Please enter a valid e-mail address ");
+}
+else if(pass==null || pass=="")
+{
+alert("please enter the password");
+}
+}
+</script> 
+<style>
+body {
+  background-image: url('bg 8.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+
+}
+table{
+align="center"
+
+}
+
+form{
+
+
+margin-left:400px;
+margin-right:400px;
+margin-top:100px;
+margin-bottom:100px;
+font-size:20px;
+background-color:white;
+
+}
+.log{
+width:60px;
+height:40px;
+background-color:green;
+border:none;
+color:white;
+}
+
+
+</style>
+</head>
+<body>
+<form name="frm1" id="frm1">
+<fieldset align="center">
+<legend>LOGIN </legend>
+
+<table align="center">
+
+
+<tr>
+
+
+<td>
+<br>
+<br>
+username:</td>
+<td>
+<br>
+<br>
+<input type="text"  name="name"></input></td>
+</tr>
+<tr>
+<td>
+<br>
+
+Email id:</td>
+
+<td>
+<br>
+
+<input type="text" name="email" id="email"></input></td>
+</tr>
+<tr>
+
+<td>
+<br>
+
+Password:</td>
+
+<td>
+<br>
+
+<input type="password" name="password"></input></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+
+<br>
+<br>
+<input type="button" name="login" onclick="validation()" value="login" class="log"></input>
+<br>
+<br>
+
+</td>
+
+</tr>
+</fieldset>
+
+</table>
+</form> 
+</body>
+</html>

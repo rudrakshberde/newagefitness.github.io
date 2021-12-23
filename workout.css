@@ -1,0 +1,21 @@
+img{
+height:300px;
+width:400px;
+}
+table{
+background-color:grey;
+left-margin:300px;
+right-margin:300px;
+color:white;
+font-size:20px;
+}
+p1{
+font-size:30px;
+color:yellow;
+}
+body {
+  background-image: url('website bg.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+}
